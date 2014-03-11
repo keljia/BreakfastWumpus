@@ -1,0 +1,8 @@
+C:\Users\Kelly\Documents\GitHub\BreakfastWumpus\WumpusTest\WumpusTest\bin\Debug\WumpusTest.exe.config
+C:\Users\Kelly\Documents\GitHub\BreakfastWumpus\WumpusTest\WumpusTest\obj\Debug\WumpusTest.csprojResolveAssemblyReference.cache
+C:\Users\Kelly\Documents\GitHub\BreakfastWumpus\WumpusTest\WumpusTest\obj\Debug\WumpusTest.Properties.Resources.resources
+C:\Users\Kelly\Documents\GitHub\BreakfastWumpus\WumpusTest\WumpusTest\obj\Debug\WumpusTest.csproj.GenerateResource.Cache
+C:\Users\Kelly\Documents\GitHub\BreakfastWumpus\WumpusTest\WumpusTest\bin\Debug\WumpusTest.exe
+C:\Users\Kelly\Documents\GitHub\BreakfastWumpus\WumpusTest\WumpusTest\bin\Debug\WumpusTest.pdb
+C:\Users\Kelly\Documents\GitHub\BreakfastWumpus\WumpusTest\WumpusTest\obj\Debug\WumpusTest.exe
+C:\Users\Kelly\Documents\GitHub\BreakfastWumpus\WumpusTest\WumpusTest\obj\Debug\WumpusTest.pdb
