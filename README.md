@@ -1,4 +1,4 @@
-BreakfastWumpus
+Wumpus Team Breakfast
 ===============
 
-Kelly sucks and Sarang is better than her
+Kelly is better than Sarang
