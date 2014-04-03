@@ -13,8 +13,8 @@ namespace FormTest
         private int correct;
         private int numQuestions;
         bool result;
-        string[] questions = System.IO.File.ReadAllLines(@"C:\Users\Amanda\Downloads\TriviaQuestions.txt");
-        string[] fact = System.IO.File.ReadAllLines(@"C:\Users\Amanda\Downloads\TriviaFacts.txt");
+        string[] questions = System.IO.File.ReadAllLines(@".\TriviaText\TriviaQuestions.txt");
+        string[] fact = System.IO.File.ReadAllLines(@".\TriviaText\TriviaFacts.txt");
         // constructors
         public Trivia(int numberOfQuestions)
         {
