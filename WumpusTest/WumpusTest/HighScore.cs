@@ -9,11 +9,11 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace Example
+namespace WumpusTest
 {
-    public class HighScore  
+    public partial class Form1 : Form
     {
-        public HighScore() 
+        public Form1()
         {
             InitializeComponent();
         }
@@ -51,11 +51,16 @@ namespace Example
         /// <summary>
         /// Gets the Score - Descending Order
         /// </summary>
-        private void CalculateScores(String Score1, String Score2, String Score3, String Score4, String Score4)
+        private void CalculateScores()
         {
 
 
-         
+            //Read and Assign Values
+            string Score1 = txtScore1.Text;
+            string Score2 = txtScore2.Text;
+            string Score3 = txtScore3.Text;
+            string Score4 = txtScore4.Text;
+            string Score5 = txtScore5.Text;
 
             //Create a 2 dimensional Array (Name, Score)
             string[,] a = new string[,]
@@ -160,7 +165,14 @@ namespace Example
 
         }
 
-       
+        private void button2_Click(object sender, EventArgs e)
+        {
+            // Clear all Text Boxes
+            txtScore1.Text = string.Empty;
+            txtScore2.Text = string.Empty;
+            txtScore3.Text = string.Empty;
+            txtScore4.Text = string.Empty;
+            txtScore5.Text = string.Empty;
+        }
     }
 }
-
