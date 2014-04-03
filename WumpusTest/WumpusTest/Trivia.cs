@@ -6,62 +6,94 @@ using System.Threading.Tasks;
 using System.IO;
 
 
-namespace WumpusTest
+namespace TestTrivia
 {
     /// <summary>
     /// returns whether user has passed trivia or not
     /// and sends trivia meant for displayal for every player move (for the GUI)
     /// </summary>
-    
-    class Trivia
+    public class Trivia
     {
         // instance variables
         private int correct;
         private int numQuestions;
-        string[] lines = System.IO.File.ReadAllLines(@"C:\Users\Public\TestFolder\WriteLines2.txt");
-        Random gen; 
+        bool result;
+        string[] questions = System.IO.File.ReadAllLines(@"C:\Users\Amanda\Skydrive\CS\WumpusTest\bin\Debug\TriviaQuestions.txt");
+        string[] fact = System.IO.File.ReadAllLines(@"C:\User\Amanda\Skydrive\CS\WumpusTest\bin\Debug\TriviaFacts.txt");
         
         // constructors
+
+        /// <summary>
+        /// True means player has succeeded the test, false means the player lost
+        /// </summary>
+        /// <returns></returns>
         public Trivia(int numberOfQuestions)
         {
+            result = false;
             correct = 0;
             numQuestions = numberOfQuestions;
-        }
-        
-        // accessors
-        
-        // methods        
-        
 
-        /// <summary> 
-        /// Used when the player has encountered the 
-        /// wumpus (3 out of 5 questions). After
-        /// completion, will return to the main game
-        /// </summary>
-        
-        
-        public bool threeOfFive(){
-            return true;
+            if (numQuestions == 2)
+            {
+                result = twoOfThree();
+            }
+            else if (numQuestions == 3)
+            {
+                result = threeOfFive();
+            }
         }
         
+        // accessors and mutators
         /// <summary>
-        /// falls into pit or encounters bats or purchasing 
-        /// secret or purchasing arrows, 2 out of 3
-        /// After completion, will return to the main game
+        /// Will return a question given a number. There are currently 11 questions.
         /// </summary>
-        public bool twoOfThree(){
-            return true;
+        /// <returns></returns>
+        public string getQuestion(int number)
+        {
+            return questions[number * 4];
         }
-        
         /// <summary>
-        /// trivia facts that are to be displayed
-        /// every time the player moves
-        /// <param name= "move"></param>
+        /// Returns the correct answer to the question number. There are currently 11 questions.
         /// </summary>
-        public String triviaDisplay(GameControl move){
-            // if player move = true, then send trivia to game control for GUI
-            string str = "";
-            return str;
+        /// <returns></returns>
+        public string getCorrectAnswer(int number){
+            return questions[number * 4 + 1];
+        }
+
+        /// <summary>
+        /// Returns the 2nd potential answer to the question number. There are currently 11 questions.
+        /// </summary>
+        /// <returns></returns>
+        public string getSecondAnswer(int number)
+        {
+            return questions[number * 4 + 2];
+        }
+
+        /// <summary>
+        /// Returns the correct answer to the question number. There are currently 11 questions.
+        /// </summary>
+        /// <returns></returns>
+        public string getThirdAnswer(int number)
+        {
+            return questions[number * 4 + 3];
+        }
+
+        /// <summary>
+        /// Returns a fact for display whenever the player moves
+        /// </summary>
+        /// <returns></returns>
+        public string getFact()
+        {
+            int number = Random.nextInt(11) + 1;
+            return fact[number];
+        }
+        /// <summary>
+        /// True means a win, false means the player lost
+        /// </summary>
+        /// <returns></returns>
+        public bool getResult()
+        {
+            return result;
         }
     }
 }
