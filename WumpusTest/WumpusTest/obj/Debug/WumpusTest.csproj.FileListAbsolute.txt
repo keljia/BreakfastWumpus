@@ -6,3 +6,6 @@ C:\Users\Kelly\Documents\GitHub\BreakfastWumpus\WumpusTest\WumpusTest\bin\Debug\
 C:\Users\Kelly\Documents\GitHub\BreakfastWumpus\WumpusTest\WumpusTest\bin\Debug\WumpusTest.pdb
 C:\Users\Kelly\Documents\GitHub\BreakfastWumpus\WumpusTest\WumpusTest\obj\Debug\WumpusTest.exe
 C:\Users\Kelly\Documents\GitHub\BreakfastWumpus\WumpusTest\WumpusTest\obj\Debug\WumpusTest.pdb
+C:\Users\Ian\Documents\GitHub\BreakfastWumpus\WumpusTest\WumpusTest\bin\Debug\WumpusTest.exe.config
+C:\Users\Ian\Documents\GitHub\BreakfastWumpus\WumpusTest\WumpusTest\obj\Debug\WumpusTest.exe
+C:\Users\Ian\Documents\GitHub\BreakfastWumpus\WumpusTest\WumpusTest\obj\Debug\WumpusTest.pdb
