@@ -1,6 +1,6 @@
 ﻿namespace WumpusTest
 {
-    partial class Form1
+    partial class GameScreen
     {
         /// <summary>
         /// Required designer variable.
@@ -68,7 +68,7 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // Form1
+            // GameScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -76,8 +76,8 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.checkedListBox1);
             this.Controls.Add(this.button1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "GameScreen";
+            this.Text = "GameScreen";
             this.ResumeLayout(false);
 
         }

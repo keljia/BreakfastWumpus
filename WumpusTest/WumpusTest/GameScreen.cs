@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace WumpusTest
 {
-    public partial class Form1 : Form
+    public partial class GameScreen : Form
     {
-        public Form1()
+        public GameScreen()
         {
             InitializeComponent();
         }
@@ -28,18 +28,18 @@ namespace WumpusTest
             }
             g = this.CreateGraphics();
             erase(g);
-            Image top = Image.FromFile(@"C:\Users\Kelly\Pictures\Wumpus Art\Cave top.png");
-            Image topLeft = Image.FromFile(@"C:\Users\Kelly\Pictures\Wumpus Art\Cave upper left.png");
-            Image topRight = Image.FromFile(@"C:\Users\Kelly\Pictures\Wumpus Art\Cave upper right.png");
-            Image bottom = Image.FromFile(@"C:\Users\Kelly\Pictures\Wumpus Art\Cave bottom.png");
-            Image bottomLeft = Image.FromFile(@"C:\Users\Kelly\Pictures\Wumpus Art\Cave lower left.png");
-            Image bottomRight = Image.FromFile(@"C:\Users\Kelly\Pictures\Wumpus Art\Cave lower right.png");
-            Image topDoor = Image.FromFile(@"C:\Users\Kelly\Pictures\Wumpus Art\Cave top door.png");
-            Image topLeftDoor = Image.FromFile(@"C:\Users\Kelly\Pictures\Wumpus Art\Cave upper left door.png");
-            Image topRightDoor = Image.FromFile(@"C:\Users\Kelly\Pictures\Wumpus Art\Cave upper right door.png");
-            Image bottomDoor = Image.FromFile(@"C:\Users\Kelly\Pictures\Wumpus Art\Cave bottom door.png");
-            Image bottomLeftDoor = Image.FromFile(@"C:\Users\Kelly\Pictures\Wumpus Art\Cave lower left door.png");
-            Image bottomRightDoor = Image.FromFile(@"C:\Users\Kelly\Pictures\Wumpus Art\Cave lower right door.png");
+            Image top = Image.FromFile(@".\SuchArt\Cave top.png");
+            Image topLeft = Image.FromFile(@".\SuchArt\Cave upper left.png");
+            Image topRight = Image.FromFile(@".\SuchArt\Cave upper right.png");
+            Image bottom = Image.FromFile(@".\SuchArt\Cave bottom.png");
+            Image bottomLeft = Image.FromFile(@".\SuchArt\Cave lower left.png");
+            Image bottomRight = Image.FromFile(@".\SuchArt\Cave lower right.png");
+            Image topDoor = Image.FromFile(@".\SuchArt\Cave top door.png");
+            Image topLeftDoor = Image.FromFile(@".\SuchArt\Cave upper left door.png");
+            Image topRightDoor = Image.FromFile(@".\SuchArt\Cave upper right door.png");
+            Image bottomDoor = Image.FromFile(@".\SuchArt\Cave bottom door.png");
+            Image bottomLeftDoor = Image.FromFile(@".\SuchArt\Cave lower left door.png");
+            Image bottomRightDoor = Image.FromFile(@".\SuchArt\Cave lower right door.png");
 
             Image[,] walls = {{top, topDoor},
                              {topLeft, topLeftDoor},
